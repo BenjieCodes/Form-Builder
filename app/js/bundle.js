@@ -9853,14 +9853,26 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 var url = 'http://json-data.herokuapp.com/forms';
 //text input
+var formInner = (0, _jquery2['default'])('.formInner');
 
-function input(obj) {
-  return '\n  <div class="formElement" id="' + obj.id + '">\n  <input type="' + obj.type + '" placeholder="' + obj.label + '">\n  <i class ="fa=' + obj.icon + '"></i>\n  </div>\n  ';
+// Made a function template for the form inputs
+function inputTemplate(obj) {
+  return '\n  <div class="formElement" id="' + obj.id + '">\n  <input type="' + obj.type + '" placeholder="' + obj.label + '">\n  <i class ="fa ' + obj.icon + '"></i>\n  </div>\n  ';
 }
 
-var dataReq = _jquery2['default'].getJSON(url);
-dataReq.then(function (response) {
-  buildForm(response);
+// Get the data from the URL
+var dataRequest = _jquery2['default'].getJSON(url);
+dataRequest.then(function (response) {
+  // Made a variable for the data from the url
+  var data = response;
+
+  // Made a function to grab data from each object
+  data.forEach(function (object) {
+    // Made a variable to grab the function template
+    var objectData = inputTemplate(object);
+    // Appended a function template onto the class '.forminner' for all the objects
+    formInner.append(objectData);
+  });
 });
 
 },{"jquery":1}]},{},[2])
