@@ -9873,6 +9873,14 @@ dataRequest.then(function (response) {
     // Appended a function template onto the class '.forminner' for all the objects
     formInner.append(objectData);
   });
+
+  var languages = data[4];
+  function languagechange() {
+    if (data.type = "select") {
+      return '<select>\n      <option>' + languages + '</option>\n    </select>';
+    }
+  }
+  formInner.append(languagechange);
 });
 
 },{"jquery":1}]},{},[2])

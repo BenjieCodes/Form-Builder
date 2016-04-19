@@ -27,6 +27,20 @@ dataRequest.then(function (response) {
     var objectData = inputTemplate(object);
 // Appended a function template onto the class '.forminner' for all the objects
     formInner.append(objectData);
+
   });
+
+var languages = data[4];
+function languagechange () {
+  if (data.type = "select") {
+    return `<select>
+      <option>${languages}</option>
+    </select>`;
+  }
+}
+  formInner.append(languagechange);
+
+
+
 
 });
