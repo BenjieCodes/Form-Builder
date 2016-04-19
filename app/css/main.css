@@ -9,23 +9,22 @@ header {
   color: white;
   border: 1px solid #2F83CC; }
 
+.formElement {
+  position: relative; }
+
 input {
   margin: 20px 0px 10px 30px;
   padding: 5px;
   border-radius: 3px;
   width: 70%;
-  position: relative;
   border-color: #D0D4D7;
   border-radius: 3px; }
-
-i {
-  position: relative; }
 
 .fa {
   position: absolute;
   left: 40px;
+  top: 30px;
   font-size: 12px;
-  padding-top: 30px;
   color: #A6B0B8; }
 
 ::-webkit-input-placeholder {
