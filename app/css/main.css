@@ -15,6 +15,7 @@ header {
 input {
   margin: 20px 0px 10px 30px;
   padding: 5px;
+  padding-left: 30px;
   border-radius: 3px;
   width: 70%;
   border-color: #D0D4D7;
@@ -28,7 +29,7 @@ input {
   color: #A6B0B8; }
 
 ::-webkit-input-placeholder {
-  padding: 3px 0px 0px 20px;
+  padding: 3px 0px 0px 0px;
   font-size: 11px;
   font-weight: bold;
   color: #A6B0B8; }
