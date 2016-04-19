@@ -29,5 +29,4 @@ dataRequest.then(function (response) {
     formInner.append(objectData);
   });
 
-
 });

@@ -1,11 +1,11 @@
 .container {
   width: 500px;
   border: 2px solid #C3C3C3;
-  border-radius: 3px;
-  border-bottom: none; }
+  border-radius: 3px; }
 
 header {
   background: #428BCA;
+  padding-left: 20px;
   color: white;
   border: 1px solid #2F83CC; }
 
@@ -16,18 +16,35 @@ input {
   width: 70%;
   position: relative;
   border-color: #D0D4D7;
-  border-radius: 3px;
-  position: relative; }
+  border-radius: 3px; }
 
 i {
+  position: relative; }
+
+.fa {
   position: absolute;
   left: 40px;
-  bottom: 3px; }
+  font-size: 12px;
+  padding-top: 30px;
+  color: #A6B0B8; }
 
 ::-webkit-input-placeholder {
   padding: 3px 0px 0px 20px;
   font-size: 11px;
   font-weight: bold;
   color: #A6B0B8; }
+
+.footer {
+  background: #C9DEF0;
+  padding-bottom: 50px; }
+
+button {
+  margin-top: 30px;
+  margin-left: 15px;
+  background: #428BCA;
+  color: white;
+  border: 1px solid #2E7FC4;
+  padding: 7px;
+  border-radius: 3px; }
 
 /*# sourceMappingURL=main.css.map */
