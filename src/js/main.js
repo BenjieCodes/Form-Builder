@@ -16,10 +16,18 @@ function inputText (obj) {
 
 // Made a function template for the form select
 function inputSelect (obj) {
+
+  var options = "";
+
+  obj.options.forEach(function (language) {
+    options += `<option value="${language.value}">${language.label}</option>
+    `;
+  })
   return `
   <div class="formElement" id="${obj.id}">
-  <select placeholder="${obj.label}"
-    <option>${obj.options}</option>
+  <select>
+    <option>${obj.label}...</option>
+    ${options}
   </select>
   `;
 }
@@ -28,7 +36,7 @@ function inputSelect (obj) {
 function inputComment (obj) {
   return `
   <div class="formElement" id="${obj.id}">
-  <textarea type="${obj.type}" placeholder="${obj.label}"> </textarea>
+  <textarea placeholder="${obj.label}"></textarea>
   <i class ="fa ${obj.icon}"></i>
   </div>
   `;

@@ -9862,12 +9862,18 @@ function inputText(obj) {
 
 // Made a function template for the form select
 function inputSelect(obj) {
-  return '\n  <div class="formElement" id="' + obj.id + '">\n  <select placeholder="' + obj.label + '"\n    <option>' + obj.options + '</option>\n  </select>\n  ';
+
+  var options = "";
+
+  obj.options.forEach(function (language) {
+    options += '<option value="' + language.value + '">' + language.label + '</option>\n    ';
+  });
+  return '\n  <div class="formElement" id="' + obj.id + '">\n  <select>\n    <option>' + obj.label + '...</option>\n    ' + options + '\n  </select>\n  ';
 }
 
 // Made a function template for the form comment
 function inputComment(obj) {
-  return '\n  <div class="formElement" id="' + obj.id + '">\n  <textarea type="' + obj.type + '" placeholder="' + obj.label + '"> </textarea>\n  <i class ="fa ' + obj.icon + '"></i>\n  </div>\n  ';
+  return '\n  <div class="formElement" id="' + obj.id + '">\n  <textarea placeholder="' + obj.label + '"></textarea>\n  <i class ="fa ' + obj.icon + '"></i>\n  </div>\n  ';
 }
 
 // Get the data from the URL

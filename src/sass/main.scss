@@ -1,5 +1,9 @@
+body {
+  padding: 50px;
+}
 
 .container {
+  margin: 0 auto;
   width: 500px;
   border: 2px solid #C3C3C3;
   border-radius: 3px;
@@ -27,6 +31,28 @@ input {
   width: 70%;
   border-color: #D0D4D7;
   border-radius: 3px;
+}
+
+select {
+  margin: 20px 0px 10px 30px;
+  border-radius: 3px;
+  border-color: #D0D4D7;
+  border-radius: 3px;
+  width: 388px;
+  background: white;
+  font-size: 12px;
+  color: black;
+}
+
+textarea {
+  margin: 20px 0px 10px 30px;
+  padding: 5px;
+  padding-left: 30px;
+  border-radius: 3px;
+  width: 70%;
+  border-color: #D0D4D7;
+  border-radius: 3px;
+  height: 150px;
 }
 
 
